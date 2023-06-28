@@ -152,3 +152,86 @@ console.log('=================================================');
 true == 'true' //false
 true == 1 // true
 true == '1' //true
+
+
+console.log('=================================================');
+console.log('=================================================');
+
+
+//Arrays
+//indice         0          1         2        3
+let frutas = ['banana', 'manzana', 'pera', 'durazno']
+let persona = ['Pepe', 'Concordia 2743', '1B', 44160869, ['Juan', 'Joaco'], true]
+
+//acceso al array - todos los elementos:
+console.log(frutas);
+console.log('=================================================');
+console.log(persona);
+
+
+//acceso al elemento por su indice:
+//muestro manzana
+console.log('El elemento del indice 1 es: ' + frutas [1]);
+
+console.log('=================================================');
+
+
+//acceso al elemento por su indice:
+//muestro Joaco
+
+console.log(persona [5][1]);
+
+console.log('=================================================');
+console.log('=================================================');
+
+
+//bucles: pequeñas estructuras repetitivas de código.
+
+//       inicio        final/limite        paso
+for (let index = 0; index < array.length; index++) {
+    //codigo para repetir siempre que sea TRUE
+    const element = array[index];
+}
+
+// i = index
+for (let i = 0; i < 10; i++) {
+    console.log('Estamos contando de 0 a 9: ' + i);
+    //no me imprime el 10, xq 10 no es < que 10
+}
+
+console.log('============================================================================');
+console.log('============================================================================');
+
+
+//para que me diga cuantos elementos hay en el array (.length)
+console.log(persona.length);
+
+console.log('============================================================================');
+
+//para que me los muestre 1x1
+for (let i = 0; i < persona.length; i++) {
+    console.log(`Los elementos de persona son: ${persona[i]}`)
+}
+
+
+console.log('============================================================================');
+console.log('============================================================================');
+
+//introducir datos en un array
+let alumnos = []
+let data = prompt ('Introduce un/a alumno/a: ')
+
+//funcion para agregar datos a un array - push
+//ejemplo
+if (!data) {
+    alert ('No se introdujo ningun dato')
+} else {
+    alumnos.push(data)
+    alert (`Ingresamos el alumno ${data} al array alumnos.`)
+}
+
+console.log(alumnos);
+
+
+console.log('============================================================================');
+console.log('============================================================================');
